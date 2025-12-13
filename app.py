@@ -30,7 +30,6 @@ def add_student():
     db.commit()
     return redirect(url_for('index'))
 
-# ✅ MODIFIED: added DELETE method + JSON response
 @app.route('/delete/<int:id>', methods=['DELETE'])
 def delete_student(id):
     cursor.execute("DELETE FROM students WHERE id = %s", (id,))
@@ -39,3 +38,4 @@ def delete_student(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
