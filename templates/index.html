@@ -60,7 +60,7 @@
         </thead>
         <tbody>
           {% for student in students %}
-          <!-- ✅ ADDED row id for dynamic delete -->
+        
           <tr id="row-{{ student[0] }}">
             <td>{{ student[0] }}</td>
             <td>{{ student[1] }}</td>
@@ -83,8 +83,6 @@
         </tbody>
       </table>
     </div>
-
-    <!-- ✅ ADDED JavaScript for dynamic delete -->
     <script>
       function deleteStudent(id) {
         if (!confirm("Are you sure you want to delete this student?")) return;
@@ -104,3 +102,4 @@
     </script>
   </body>
 </html>
+
