@@ -6,7 +6,7 @@ app = Flask(__name__)
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="R@gusm43@coder",
+    password="your_password",
     database="myapp"
 )
 
@@ -38,4 +38,5 @@ def delete_student(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
